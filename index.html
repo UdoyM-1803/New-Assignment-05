@@ -35,7 +35,7 @@
                     <div class="flex items-center gap-4">
                         <div class="flex gap-3 p-2 bg-gray-100 rounded-full items-center">
                             <input type="checkbox" checked="" class="checkbox checkbox-primary" />
-                            <h1 class="font-bold">23</h1>
+                            <h1 id="task-count-1" class="font-bold">23</h1>
                         </div>
                         <button class="hover:bg-green-500 hover:rounded-full active:p-2 active:w-10">
                             <img src="assets/theme-btn.png" alt="">
@@ -46,7 +46,7 @@
         </section>
     </header>
 
-    <main class="w-5/6 mx-auto mt-2 lg:flex gap-4">
+    <main class="w-5/6 mx-auto mt-2 lg:flex gap-4 mb-6">
         <section class="w-full lg:w-3/4 p-4 bg-white mt-2 rounded-2xl">
             <!-- Updated Section and Time and Date Section -->
             <div class="grid md:grid-cols-2 lg:flex gap-5">
@@ -56,7 +56,7 @@
                     </div>
                     <div>
                         <p class="text-sm">Task Assigned</p>
-                        <h2 class="font-bold text-xl">05</h2>
+                        <h2 id="task-count-2" class="font-bold text-xl">6</h2>
                     </div>
                 </div>
                 <div class="flex items-center bg-gradient-to-r from-blue-600 to-blue-300 rounded-xl p-8 lg:w-2/4 hover:border-2 active:bg-gradient-to-r active:from-stone-500 active:to-stone-400">
@@ -82,6 +82,7 @@
             <!-- Card Section ******************** -->
             <section>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
                     <!-- ShopEase Card(Card-1) ************ -->
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
@@ -97,11 +98,12 @@
                                     <h1 class="font-semibold">21 March 2025</h1>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button id="shop-ease-btn" class="btn btn-primary">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- CloudSync Card (Card-2) ************ -->
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
@@ -116,11 +118,12 @@
                                     <h1 class="font-semibold">21 March 2025</h1>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button id="cloud-sync-btn" class="btn btn-primary">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- SwiftPay Card (Card-3) ************ -->
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
@@ -136,11 +139,12 @@
                                     <h1 class="font-semibold">21 March 2025</h1>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button id="swift-pay-btn" class="btn btn-primary">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- Meta Card (Card-4)************ -->
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
@@ -156,11 +160,12 @@
                                     <h1 class="font-semibold">21 March 2025</h1>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button id="meta-btn" class="btn btn-primary">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- Google LLC Card (Card-5)************ -->
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
@@ -176,11 +181,12 @@
                                     <h1 class="font-semibold">21 March 2025</h1>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button id="google-llc-btn" class="btn btn-primary">Completed</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- Glassdoar Card (Card-6)************ -->
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
@@ -196,7 +202,7 @@
                                     <h1 class="font-semibold">21 March 2025</h1>
                                 </div>
                                 <div class="card-actions">
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button id="glass-doar-btn" class="btn btn-primary">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -225,6 +231,13 @@
         </section>
     </main>
 
+    <script src="JS/fixmobile.js"></script>
+    <script src="utilities/utilities.js"></script>
+    <script src="JS/cloudsync.js"></script>
+    <script src="JS/glassdoar.js"></script>
+    <script src="JS/googlellc.js"></script>
+    <script src="JS/meta.js"></script>
+    <script src="JS/swiftpay.js"></script>
 </body>
 
 </html>
