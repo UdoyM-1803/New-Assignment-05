@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>DevBoard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body class="bg-blue-200 py-4 poppins-font">
+    <!-- Nav Bar -->
+    <header class="w-5/6 mx-auto">
+        <section>
+            <div class="navbar p-4 bg-base-100 rounded-2xl flex justify-between">
+                <div class="flex items-center gap-1">
+                    <div class="w-10 h-10">
+                        <img src="assets/logo.png" alt="">
+                    </div>
+                    <h2 class="text-3xl">Dev<span class="font-bold">Board</span></h2>
+                </div>
+                <div class="flex-end">
+                    <div class="flex items-center gap-4">
+                        <div class="flex gap-3 p-2 bg-gray-100 rounded-full items-center">
+                            <input type="checkbox" checked="" class="checkbox checkbox-primary" />
+                            <h1 class="font-bold">23</h1>
+                        </div>
+                        <button>
+                            <img src="assets/theme-btn.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="w-5/6 mx-auto mt-2 flex gap-4">
+        <section class="w-3/4 p-4 bg-white mt-2 rounded-2xl">
+            <!-- Updated Section and Time and Date Section -->
+            <div class="flex gap-5">
+                <div class="bg-gray-100 p-4 flex items-center gap-3 rounded-xl w-1/4">
+                    <div class="bg-white p-2 rounded-full">
+                        <input type="checkbox" checked="" class="checkbox checkbox-primary" />
+                    </div>
+                    <div>
+                        <p class="text-sm">Task Assigned</p>
+                        <h2 class="text-center font-bold text-xl">05</h2>
+                    </div>
+                </div>
+                <div class="flex items-center bg-gradient-to-r from-blue-600 to-blue-300 rounded-xl p-8 w-2/4">
+                    <div class="w-12">
+                        <img src="assets/board.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-white text-xl">Discover Something <br>New Today!</p>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 flex items-center gap-3 rounded-xl w-1/4">
+                    <div class="bg-white p-2 rounded-full">
+                        <img src="assets/calender.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-sm">Wed, </p>
+                        <h2 class="text-center font-bold text-xl">July 28, 2025</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <section>
+                <div class="grid grid-cols-3 gap-6">
+                    <!-- ShopEase Card(Card-1) ************ -->
+                    <div class="card bg-gray-100 card-md shadow-sm">
+                        <div class="card-body">
+                            <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">ShopEase</h4>
+                            <h2 class="font-medium text-xl">Fix Mobile Button Issue</h2>
+                            <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
+                                elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="divider"></div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-sm">Deadline</h2>
+                                    <h1 class="font-semibold">21 March 2025</h1>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CloudSync Card (Card-2) ************ -->
+                    <div class="card bg-gray-100 card-md shadow-sm">
+                        <div class="card-body">
+                            <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">CloudSync</h4>
+                            <h2 class="font-medium text-xl">Add Dark Mode</h2>
+                            <p class="bg-white px-2 py-4 rounded-lg">Store the user's preference in localStorage, update
+                                CSS variables dynamically, and apply a smooth transition effect.</p>
+                            <div class="divider"></div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-sm">Deadline</h2>
+                                    <h1 class="font-semibold">21 March 2025</h1>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SwiftPay Card (Card-3) ************ -->
+                    <div class="card bg-gray-100 card-md shadow-sm">
+                        <div class="card-body">
+                            <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">SwiftPay</h4>
+                            <h2 class="font-medium text-xl">Optimize Home page</h2>
+                            <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
+                                elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="divider"></div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-sm">Deadline</h2>
+                                    <h1 class="font-semibold">21 March 2025</h1>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Meta Card (Card-4)************ -->
+                    <div class="card bg-gray-100 card-md shadow-sm">
+                        <div class="card-body">
+                            <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">Meta</h4>
+                            <h2 class="font-medium text-xl">Add new emoji 🤲</h2>
+                            <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
+                                elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="divider"></div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-sm">Deadline</h2>
+                                    <h1 class="font-semibold">21 March 2025</h1>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Google LLC Card (Card-5)************ -->
+                    <div class="card bg-gray-100 card-md shadow-sm">
+                        <div class="card-body">
+                            <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">Google LLC</h4>
+                            <h2 class="font-medium text-xl">Integrate OpenAI API </h2>
+                            <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
+                                elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="divider"></div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-sm">Deadline</h2>
+                                    <h1 class="font-semibold">21 March 2025</h1>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Glassdoar Card (Card-6)************ -->
+                    <div class="card bg-gray-100 card-md shadow-sm">
+                        <div class="card-body">
+                            <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">Glassdoar</h4>
+                            <h2 class="font-medium text-xl">Improve Job searching</h2>
+                            <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
+                                elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="divider"></div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-sm">Deadline</h2>
+                                    <h1 class="font-semibold">21 March 2025</h1>
+                                </div>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="w-1/4 py-4 bg-white rounded-2xl mt-2">
+            <div class="flex flex-col justify-center">
+                <div class="flex items-center mb-4 justify-center gap-2">
+                    <img src="assets/activity.png" alt="">
+                    <h2>Activity Log</h2>
+                </div>
+                <div class="flex justify-center">
+                    <button class="btn btn-primary w-1/2">Clear History</button>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </section>
+    </main>
+
+</body>
+
+</html>
