@@ -72,8 +72,8 @@
                         <img src="assets/calender.png" alt="">
                     </div>
                     <div>
-                        <p class="text-sm">Wed, </p>
-                        <h2 class="font-bold text-lg">July 28, 2025</h2>
+                        <p id="live-day" class="text-sm"></p>
+                        <h2 id="live-date" class="font-bold text-lg"></h2>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
                             <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">ShopEase</h4>
-                            <h2 class="font-medium text-xl">Fix Mobile Button Issue</h2>
+                            <h2 id="shop-ease-title" class="font-medium text-xl">Fix Mobile Button Issue</h2>
                             <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
                                 elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -108,7 +108,7 @@
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
                             <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">CloudSync</h4>
-                            <h2 class="font-medium text-xl">Add Dark Mode</h2>
+                            <h2 id="cloud-sync-title" class="font-medium text-xl">Add Dark Mode</h2>
                             <p class="bg-white px-2 py-4 rounded-lg">Store the user's preference in localStorage, update
                                 CSS variables dynamically, and apply a smooth transition effect.</p>
                             <div class="divider"></div>
@@ -128,7 +128,7 @@
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
                             <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">SwiftPay</h4>
-                            <h2 class="font-medium text-xl">Optimize Home page</h2>
+                            <h2 id="swift-pay-title" class="font-medium text-xl">Optimize Home page</h2>
                             <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
                                 elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -149,7 +149,7 @@
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
                             <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">Meta</h4>
-                            <h2 class="font-medium text-xl">Add new emoji 🤲</h2>
+                            <h2 id="meta-title" class="font-medium text-xl">Add new emoji 🤲</h2>
                             <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
                                 elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -170,7 +170,7 @@
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
                             <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">Google LLC</h4>
-                            <h2 class="font-medium text-xl">Integrate OpenAI API </h2>
+                            <h2 id="google-llc-title" class="font-medium text-xl">Integrate OpenAI API </h2>
                             <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
                                 elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -191,7 +191,7 @@
                     <div class="card bg-gray-100 card-md shadow-sm">
                         <div class="card-body">
                             <h4 class="text-sm bg-white p-1 w-2/5 text-center rounded-sm">Glassdoar</h4>
-                            <h2 class="font-medium text-xl">Improve Job searching</h2>
+                            <h2 id="glass-doar-title" class="font-medium text-xl">Improve Job searching</h2>
                             <p class="bg-white px-2 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping
                                 elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -219,14 +219,12 @@
                     <h2>Activity Log</h2>
                 </div>
                 <div class="flex justify-center">
-                    <button class="btn btn-primary w-1/2">Clear History</button>
+                    <button id="clear-history-btn" class="btn btn-primary w-1/2">Clear History</button>
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="w-5/6 mx-auto flex flex-col gap-4">
-                <!-- <div class="bg-gray-100 rounded-xl p-2">
-                    <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                </div> -->
+            <div id="activity-log-container" class="w-5/6 mx-auto flex flex-col gap-4">
+                <span id="current-time"></span>
             </div>
         </section>
     </main>
@@ -238,6 +236,9 @@
     <script src="JS/googlellc.js"></script>
     <script src="JS/meta.js"></script>
     <script src="JS/swiftpay.js"></script>
+    <script src="utilities/toggle.js"></script>
+    <script src="utilities/livedate.js"></script>
+    <script src="JS/clearhistory.js"></script>
 </body>
 
 </html>
